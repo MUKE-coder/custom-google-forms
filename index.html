@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      var submitted = false;
+    </script>
+    <iframe
+      id="submitIframe"
+      name="submitIframe"
+      style="display: none"
+      onload="if(submitted){
+        window.location ='thankyou.html'
+      }"
+    ></iframe>
+    <form
+      action="https://docs.google.com/forms/d/e/1FAIpQLSdVCkiUC0xWRgjyUG6VUyySN55qCzJB7o98ixtsOhmw9Hq3xA/formResponse"
+      method="post"
+      target="submitIframe"
+      onsubmit="submitted=true"
+    >
+      <div class="form-field">
+        <label for="">What is Your Name</label>
+        <input
+          type="text"
+          name="entry.1884265043"
+          placeholder="Enter your Name"
+        />
+      </div>
+      <div class="form-field">
+        <label for="">What is Biology</label>
+        <input
+          type="text"
+          name="entry.1212348438"
+          placeholder="Enter what Biology"
+        />
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
